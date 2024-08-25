@@ -1,19 +1,21 @@
 import type { ContentParser } from "./contentParser.type";
 
 import regexp from "./parts/regexp";
-import kind from "./parts/kind";
-import is from "./parts/is";
+import secure from "./parts/secure";
 import have from "./parts/have";
 import parseAs from "./parts/parseAs";
-import tools from "./parts/tools";
+import benchmark from "./parts/benchmark";
+import error from "./parts/error";
+import kind from "./parts/kind";
 
 const ContentParser: ContentParser = {
   regexp,
-  kind,
-  is,
+  secure,
   have,
+  kind,
   parseAs,
-  tools
+  benchmark,
+  error
 }
 
 export default ContentParser
